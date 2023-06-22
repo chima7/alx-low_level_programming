@@ -1,0 +1,11 @@
+ = 0
+      |       ^
+      |       ;
+   11 | 
+   12 |  while (i < 24)
+      |  ~~~~~ 
+8-24_hours.c:8:9: error: unused variable ‘j’ [-Werror=unused-variable]
+    8 |  int i, j;
+      |         ^
+8-24_hours.c:8:6: error: variable ‘i’ set but not used [-Werror=unused-but-set-variable]
+    8 |  int i, j;
