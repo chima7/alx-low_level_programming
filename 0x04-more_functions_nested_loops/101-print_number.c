@@ -1,9 +1,9 @@
 #include "main.h"
-
+#include "studio.h"
 /**
- * prints an integer
- *
- *  Return: Always 0
+ * prints_integer - Prints an integer,
+ * @n: The integer to prints.
+ *  Return: Nothing!
  */
 
 void print_number(int n)
@@ -18,7 +18,6 @@ void print_number(int n)
 		_putchar('-');
 		n *= -1;
 	}
-	
 	int power = 1;
 	int temp = n;
 
@@ -31,6 +30,7 @@ void print_number(int n)
 	while (power > 0)
 	{
 		int digit = n / power;
+
 		_putchar('0' + digit);
 		n %= power;
 		power /= 10;
