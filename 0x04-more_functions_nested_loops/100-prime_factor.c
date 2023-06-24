@@ -15,11 +15,11 @@ int main(void)
 
 	for (x = 1; x <= square; x++)
 	{
-	if (number % x == 0)
-	{
-		maxf = number / x;
+		if (number % x == 0)
+		{
+			maxf = number / x;
+		}
 	}
-	}
-	printf ("%ld\n", maxf);
+	printf("%ld\n", maxf);
 	return (0);
 }
