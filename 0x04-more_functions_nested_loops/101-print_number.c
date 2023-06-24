@@ -8,6 +8,7 @@
  */
 
 void print_number(int n)
+
 {
 	unsigned int k = n;
 
