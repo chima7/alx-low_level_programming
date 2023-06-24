@@ -1,5 +1,5 @@
 #include "main.h"
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * prints_integer - Prints an integer,
