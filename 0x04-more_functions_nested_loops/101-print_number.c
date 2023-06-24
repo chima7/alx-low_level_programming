@@ -1,5 +1,6 @@
 #include "main.h"
-#include "studio.h"
+#include <unistd.h>
+
 /**
  * prints_integer - Prints an integer,
  * @n: The integer to prints.
@@ -8,32 +9,16 @@
 
 void print_number(int n)
 {
-	if (n == 0)
-	{
-		_putchar('0');
-		return;
-	}
+	unsigned int k = n;
+
 	if (n < 0)
 	{
-		_putchar('-');
 		n *= -1;
+		k = n;
+		_putchar('-');
 	}
-	int power = 1;
-	int temp = n;
-
-	while (temp > 9)
-	{
-		power *= 10;
-		temp /= 10;
-	}
-
-	while (power > 0)
-	{
-		int digit = n / power;
-
-		_putchar('0' + digit);
-		n %= power;
-		power /= 10;
-	}
+	k /= 10;
+	if (k != 0)
+	print_number(k);
+	_putchar((unsigned int) n % 10 + '0');
 }
-
