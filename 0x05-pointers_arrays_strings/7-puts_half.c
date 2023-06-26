@@ -18,8 +18,8 @@ void puts_half(char *str)
 	}
 	if (j % 2 == 1)
 	{
-	K = (j - 1) / 2;
-	K += 1;
+	k = (j - 1) / 2;
+	k += 1;
 	}
 	else
 	{
@@ -31,3 +31,4 @@ void puts_half(char *str)
 		_putchar(str[k]);
 	}
 	_putchar('\n');
+}
