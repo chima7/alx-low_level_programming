@@ -4,11 +4,9 @@
  * @n: input value
  * Return: n value
  */
-
 char *leet(char *n)
-
 {
-	int l, j;
+	int i, j;
 	char s1[] = "aAeEoOtTlL";
 	char s2[] = "4433007711";
 
@@ -24,3 +22,4 @@ char *leet(char *n)
 	}
 	return (n);
 }
+

@@ -8,6 +8,7 @@
  */
 
 int main(void)
+
 {
 	char str[] = "look up!\n";
 	char *ptr;
